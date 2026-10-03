@@ -1,0 +1,46 @@
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: ["claude/wonderful-fermat-2qlw84"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Assemble site
+        env:
+          BASE: ${{ steps.pages.outputs.base_path }}
+        run: |
+          mkdir _site
+          cp -r index.html menu.html 404.html robots.txt sitemap.xml site.webmanifest assets _site/
+          # 404.html uses root-absolute paths; prefix them when served from a project subpath (e.g. /BBQ)
+          if [ -n "$BASE" ]; then
+            sed -i -E "s#(href|src|srcset)=\"/#\1=\"$BASE/#g; s#, /assets/#, $BASE/assets/#g" _site/404.html
+            sed -i -E "s#\"/assets/#\"$BASE/assets/#g; s#\"start_url\": \"/\"#\"start_url\": \"$BASE/\"#; s#\"scope\": \"/\"#\"scope\": \"$BASE/\"#" _site/site.webmanifest
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

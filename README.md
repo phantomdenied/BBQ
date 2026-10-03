@@ -38,3 +38,9 @@ The GoDaddy stock photo used on the old site was left out because its licence is
 **Online ordering**: if the restaurant adds an ordering service, point the primary hero button and the first button in the mobile action bar at it, and relabel them "Order Online".
 
 **Contact form**: there is no server, so the form opens the visitor's email app addressed to mommalobbq@gmail.com. To receive submissions directly, point the form's `action` at a form service (Formspree, Netlify Forms, etc.) and remove the `mailto` handler in `main.js`.
+
+## Publishing
+
+`.github/workflows/pages.yml` publishes the site to GitHub Pages on every push to `claude/wonderful-fermat-2qlw84` (the repo's default branch), and can be run by hand from the Actions tab. One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**. The site is then served at https://phantomdenied.github.io/BBQ/.
+
+The pages' canonical and Open Graph URLs point to `https://mommalosbbq.com/`, so search engines treat the GitHub Pages copy as a mirror. To make GitHub Pages the real home, point the `mommalosbbq.com` domain at it (Settings → Pages → Custom domain) once you're ready to retire the GoDaddy site.
