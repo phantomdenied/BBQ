@@ -17,7 +17,9 @@ Preview locally with any static server, e.g. `npx http-server .` and open http:/
 
 ## Content source
 
-All restaurant facts come from the original GoDaddy site: name, logo, address, phone, email, hours, "Fried Chicken Fridays", the Philosophy, Pitmasters and Community text, the photos, and the Facebook and Yelp links. Nothing else was added. The original site has **no menu, prices, online ordering, reservations or catering information**, so the new site doesn't claim any of those.
+All restaurant facts come from the original GoDaddy site: name, logo, address, phone, email, hours, "Fried Chicken Fridays", the Philosophy, Pitmasters and Community text, the photos, and the Facebook and Yelp links. The original site has **no menu, prices, online ordering, reservations or catering information**, so the new site doesn't claim any of those.
+
+Five more photos were supplied by the client: the BBQ chicken plate (BBQ chicken with mac & cheese and cornbread), the pitmaster at the smoker, ribs and chicken on the pit, the grill of chicken quarters, and the storefront. The BBQ Chicken, Mac & Cheese and Cornbread menu entries come from those photos. The sauced chicken is barbecue chicken, so it is never shown as Fried Chicken Fridays. The storefront photo is used only in Hours & Location.
 
 The GoDaddy stock photo used on the old site was left out because its licence is tied to GoDaddy's builder. The "Momma Lo cooking ribs" photo is credited to E.M. Marcus, as it was on the original site.
 

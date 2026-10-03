@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Menu | Momma Lo's BBQ, Great Barrington, MA</title>
-  <meta name="description" content="The menu at Momma Lo's BBQ in Great Barrington, MA: ribs off the smoker and Fried Chicken Fridays for lunch. Call 413-645-3298 for today's menu and prices.">
+  <meta name="description" content="The menu at Momma Lo's BBQ in Great Barrington, MA: ribs and BBQ chicken off the pit, mac & cheese and cornbread, and Fried Chicken Fridays for lunch. Call 413-645-3298 for today's menu and prices.">
   <link rel="canonical" href="https://mommalosbbq.com/menu.html">
   <meta name="theme-color" content="#110e0c">
 
@@ -34,7 +34,8 @@
     "name": "Momma Lo's BBQ Menu",
     "url": "https://mommalosbbq.com/menu.html",
     "hasMenuSection": [
-      { "@type": "MenuSection", "name": "Off the Smoker", "hasMenuItem": [ { "@type": "MenuItem", "name": "Ribs" } ] },
+      { "@type": "MenuSection", "name": "Off the Smoker", "hasMenuItem": [ { "@type": "MenuItem", "name": "Ribs" }, { "@type": "MenuItem", "name": "BBQ Chicken" } ] },
+      { "@type": "MenuSection", "name": "Sides", "hasMenuItem": [ { "@type": "MenuItem", "name": "Mac & Cheese" }, { "@type": "MenuItem", "name": "Cornbread" } ] },
       { "@type": "MenuSection", "name": "Fried Chicken Fridays", "hasMenuItem": [ { "@type": "MenuItem", "name": "Fried Chicken", "description": "Every Friday for lunch." } ] }
     ]
   }
@@ -104,6 +105,7 @@
         <p class="lede">Southern style BBQ from Momma Lo's pit. We don't post prices online, so call <a href="tel:+14136453298">(413) 645-3298</a> for today's menu and prices.</p>
         <nav class="menu-cats" aria-label="Menu sections">
           <a class="chip" href="#smoker">Off the Smoker</a>
+          <a class="chip" href="#sides">Sides</a>
           <a class="chip" href="#fridays">Fried Chicken Fridays</a>
         </nav>
       </div>
@@ -123,13 +125,50 @@
               <h3>Ribs</h3>
               <p>Full racks, seasoned and cooked over the fire on Momma Lo's smoker.</p>
             </article>
+            <article class="menu-item">
+              <h3>BBQ Chicken</h3>
+              <p>Leg quarters, seasoned and cooked on the pit.</p>
+            </article>
           </div>
-          <figure class="g-item reveal-img" style="margin-top:2rem;aspect-ratio:4/3">
+          <div class="menu-photos">
+            <figure class="g-item reveal-img">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 960px) 30vw, 50vw" srcset="assets/img/ribs-closeup-480.webp 480w, assets/img/ribs-closeup-800.webp 800w">
+                <img src="assets/img/ribs-closeup-800.jpg" sizes="(min-width: 960px) 30vw, 50vw" srcset="assets/img/ribs-closeup-480.jpg 480w, assets/img/ribs-closeup-800.jpg 800w"
+                     width="800" height="600" loading="lazy" decoding="async" alt="Close-up of the seasoned, smoky bark on a rack of ribs">
+              </picture>
+              <figcaption><strong>Ribs</strong></figcaption>
+            </figure>
+            <figure class="g-item reveal-img">
+              <picture>
+                <source type="image/webp" sizes="(min-width: 960px) 30vw, 50vw" srcset="assets/img/chicken-quarters-480.webp 480w, assets/img/chicken-quarters-800.webp 800w">
+                <img src="assets/img/chicken-quarters-800.jpg" sizes="(min-width: 960px) 30vw, 50vw" srcset="assets/img/chicken-quarters-480.jpg 480w, assets/img/chicken-quarters-800.jpg 800w"
+                     width="800" height="600" loading="lazy" decoding="async" alt="Twelve seasoned chicken leg quarters with dark, crisped skin, lined up on the grill">
+              </picture>
+              <figcaption><strong>BBQ Chicken</strong></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="menu-section" id="sides" aria-labelledby="sides-title">
+          <h2 id="sides-title">Sides</h2>
+          <div class="menu-board">
+            <article class="menu-item">
+              <h3>Mac &amp; Cheese</h3>
+              <p>Creamy elbow macaroni and cheese.</p>
+            </article>
+            <article class="menu-item">
+              <h3>Cornbread</h3>
+              <p>A golden cornbread muffin.</p>
+            </article>
+          </div>
+          <figure class="g-item reveal-img menu-plate">
             <picture>
-              <source type="image/webp" sizes="(min-width: 960px) 60vw, 100vw" srcset="assets/img/ribs-closeup-480.webp 480w, assets/img/ribs-closeup-800.webp 800w, assets/img/ribs-closeup-1100.webp 1100w">
-              <img src="assets/img/ribs-closeup-800.jpg" sizes="(min-width: 960px) 60vw, 100vw" srcset="assets/img/ribs-closeup-480.jpg 480w, assets/img/ribs-closeup-800.jpg 800w, assets/img/ribs-closeup-1100.jpg 1100w"
-                   width="1100" height="825" loading="lazy" decoding="async" alt="Close-up of the seasoned, smoky bark on a rack of ribs">
+              <source type="image/webp" sizes="(min-width: 960px) 60vw, 100vw" srcset="assets/img/bbq-chicken-plate-480.webp 480w, assets/img/bbq-chicken-plate-800.webp 800w, assets/img/bbq-chicken-plate-1200.webp 1200w">
+              <img src="assets/img/bbq-chicken-plate-800.jpg" sizes="(min-width: 960px) 60vw, 100vw" srcset="assets/img/bbq-chicken-plate-480.jpg 480w, assets/img/bbq-chicken-plate-800.jpg 800w, assets/img/bbq-chicken-plate-1200.jpg 1200w"
+                   width="1200" height="900" loading="lazy" decoding="async" alt="A BBQ chicken quarter glazed in sauce, with mac and cheese and a cornbread muffin, in a takeout box">
             </picture>
+            <figcaption><strong>BBQ chicken with mac &amp; cheese and cornbread</strong></figcaption>
           </figure>
         </section>
 
