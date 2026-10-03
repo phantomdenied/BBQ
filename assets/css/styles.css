@@ -540,3 +540,33 @@ body.nav-open { overflow: hidden; }
 @media (min-width: 860px) {
   .sig-grid > .sig-card:nth-child(n+3) .media { aspect-ratio: auto; height: clamp(16rem, 26vw, 23rem); }
 }
+
+/* ---------- press ---------- */
+.press { background: var(--char-3); border-block: 1px solid var(--line); }
+.press-grid { display: grid; gap: clamp(2.5rem, 6vw, 5rem); }
+.press-intro .section-head, .press-intro .lede { margin-bottom: 0; }
+.press-intro .section-title { margin-bottom: 1.25rem; }
+.press-feature { margin: 2.5rem 0 0; padding-left: 1.25rem; border-left: 3px solid var(--red); }
+.press-feature blockquote { margin: 0; }
+.press-feature blockquote p {
+  font: 600 clamp(1.6rem, 3.4vw, 2.3rem)/1.18 var(--f-display); font-style: italic; margin: 0 0 1rem;
+  text-wrap: balance;
+}
+.press-feature figcaption { color: var(--cream-dim); font-size: .98rem; }
+.press-feature figcaption a { color: var(--cream); text-underline-offset: 3px; }
+.press-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.clip { padding-block: 1.6rem; border-bottom: 1px solid var(--line); display: grid; gap: .55rem; }
+.clip-meta { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: baseline; margin: 0; }
+.clip-meta .outlet { font: 700 .9rem/1 var(--f-label); letter-spacing: .16em; text-transform: uppercase; color: var(--ember); }
+.clip-meta time { font: 500 .95rem/1 var(--f-label); letter-spacing: .08em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.clip h3 { font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.2; font-weight: 700; text-wrap: balance; }
+.clip h3 a { text-decoration: none; background-image: linear-gradient(var(--red), var(--red)); background-size: 0 2px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .35s var(--ease), color .2s; }
+.clip h3 a:hover { color: var(--cream); background-size: 100% 2px; }
+.clip h3 a::after { content: " ↗"; font-family: var(--f-body); font-size: .75em; color: var(--muted); }
+.clip blockquote { margin: 0; }
+.clip blockquote p { margin: 0; font-style: italic; color: var(--cream-dim); font-size: 1.05rem; }
+.clip-by { margin: 0; font-size: .9rem; color: var(--muted); }
+@media (min-width: 960px) {
+  .press-grid { grid-template-columns: .9fr 1.2fr; align-items: start; }
+  .press-intro { position: sticky; top: calc(var(--header-h) + 2rem); }
+}

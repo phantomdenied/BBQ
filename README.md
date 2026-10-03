@@ -21,6 +21,8 @@ All restaurant facts come from the original GoDaddy site: name, logo, address, p
 
 Five more photos were supplied by the client: the BBQ chicken plate (BBQ chicken with mac & cheese and cornbread), the pitmaster at the smoker, ribs and chicken on the pit, the grill of chicken quarters, and the storefront. The BBQ Chicken, Mac & Cheese and Cornbread menu entries come from those photos. The sauced chicken is barbecue chicken, so it is never shown as Fried Chicken Fridays. The storefront photo is used only in Hours & Location.
 
+The **In the Press** section on the homepage links to six local articles (The Berkshire Eagle, The Berkshire Edge, Rural Intelligence, Spectrum News 1). Each headline, author, date and quote was checked word for word against the published article. Articles spell Momma Lo's first name two ways ("Lotetta" and "Loretta"), so the site uses only "Momma Lo". To add an article, copy one `<li class="clip">` in `index.html` and add a matching `NewsArticle` entry under `subjectOf` in the JSON-LD.
+
 The GoDaddy stock photo used on the old site was left out because its licence is tied to GoDaddy's builder. The "Momma Lo cooking ribs" photo is credited to E.M. Marcus, as it was on the original site.
 
 ## Common updates
